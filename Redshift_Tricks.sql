@@ -29,3 +29,13 @@ Testing for stddev
 
 	--lower_ok line would trigger (be false) if one day was at say 1100 rows because its only partially loaded. upper_ok would trigger if one day had a million rows because of some bug. and the count_ok just makes sure each of the seven days has at least one row.
 	--standard deviation means I don’t have to guess what the minimum should be, it’s calculated from the counts. There is a risk there that if multiple days weren’t completely loaded, the average would drop AND the standard deviation would grow and it might pass when it shouldn’t.
+
+
+store environ variables use
+ls -a [gives you all random hidden files]
+	.bash_profile
+	nano .bash_profile
+	(move cursor down)
+		variable name = 'variable'
+		export variable
+
